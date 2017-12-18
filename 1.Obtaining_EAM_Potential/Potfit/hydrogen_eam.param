@@ -1,0 +1,22 @@
+ntypes		1
+config		potfitforce7000K.dat
+startpot        H_eam_chong_start.pt
+endpot		H_eam_end.pt
+tempfile	SG7k_r1.15_eam100.tmp
+distfile	SG7k_r1.15_eam100.dist
+
+imdpot		SG7k_r1.15_eam100.imd
+plotfile	SG7k_r1.15_eam1.plot
+plotpointfile   SG7k_r1.15_eam1.points
+flagfile	STOP
+
+write_lammps	1
+
+imdpotsteps	1000
+output_prefix	SG7k_r1.15_eam1
+
+opt             1
+anneal_temp     1
+eng_weight      100
+stress_weight	0
+seed		100

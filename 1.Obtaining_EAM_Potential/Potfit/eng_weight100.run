@@ -1,0 +1,79 @@
+This is potfit-0.7.1 compiled on May 22 2017, 16:10:56.
+
+Reading parameter file >> hydrogen_eam.param << ... done
+Starting to read the potential file:
+ - Potential file format 4 detected
+ - Using 3 EAM potentials to calculate forces
+Reading potential file >> H_eam_chong_start.pt << ... done
+Reading the config file >> potfitforce7000K.dat << and calculating neighbor lists ... done
+
+Read 49 configurations (49 with forces, 0 with stresses)
+with a total of 3136 atoms (3136 type 0 (100.00%)).
+
+Minimal Distances Matrix:
+Atom	       0	with
+0	0.935117	
+
+Global energy weight: 100.000000
+
+Starting optimization with 37 parameters.
+  k	T        	  m	F          	Fopt
+  0	1.000000	  0	107.310250	107.310250
+  0	1.000000	  1	5.042767	1.715694
+  0	1.000000	  2	7.156323	1.715694
+  0	1.000000	  3	9.939753	1.715694
+  0	1.000000	  4	7.263382	1.715694
+  0	1.000000	  5	5.580026	1.715694
+  0	1.000000	  6	9.758709	1.715694
+  0	1.000000	  7	7.486448	1.715694
+  0	1.000000	  8	10.569918	1.715694
+  0	1.000000	  9	8.150008	1.715694
+  0	1.000000	 10	10.072387	1.715694
+  0	1.000000	 11	11.009318	1.715694
+  0	1.000000	 12	11.240967	1.715694
+  0	1.000000	 13	10.665257	1.715694
+  0	1.000000	 14	12.468900	1.715694
+  0	1.000000	 15	9.731118	1.715694
+  0	1.000000	 16	7.908548	1.715694
+  0	1.000000	 17	13.150075	1.715694
+  0	1.000000	 18	8.709212	1.715694
+  0	1.000000	 19	10.438533	1.715694
+  0	1.000000	 20	12.001857	1.715694
+  0	1.000000	 21	5.712482	1.715694
+  0	1.000000	 22	6.978429	1.715694
+  0	1.000000	 23	9.800820	1.715694
+Annealing terminated in presence of break flagfile "STOP"!
+Temperature was 1.000000, returning optimum configuration
+Finished annealing, starting powell minimization ...
+
+Starting powell minimization ...
+0 1.715694 1000000000000000019884624838656.000000 0.000000 0.702762 0.237740 0.083599 17022
+56 0.687854 1000000000000000019884624838656.000000 0.000000 0.473228 0.194015 0.080494 17640
+55 0.574191 1000000000000000019884624838656.000000 0.000000 0.537519 0.196474 0.072242 18311
+38 0.494895 1000000000000000019884624838656.000000 0.000000 0.527670 0.191577 0.069505 18829
+37 0.489989 1000000000000000019884624838656.000000 0.000000 0.518776 0.190105 0.069106 19237
+6 0.489989 1000000000000000019884624838656.000000 0.000000 0.518776 0.190105 0.069106 19362
+Precision reached: 1.54393e-09
+
+Finished powell minimization, calculating errors ...
+
+Potential in format 4 written to file 	H_eam_end.pt
+IMD pair potential written to 		SG7k_r1.15_eam100.imd_phi.imd.pt
+IMD transfer function written to 	SG7k_r1.15_eam100.imd_rho.imd.pt
+IMD embedding function written to 	SG7k_r1.15_eam100.imd_F.imd.pt
+Potential plotting data written to 	SG7k_r1.15_eam1.plot
+Local electron density data written to 	SG7k_r1.15_eam1.rho_loc
+Force data written to 			SG7k_r1.15_eam1.force
+Energy data written to 			SG7k_r1.15_eam1.energy
+Punishment constraints data written to 	SG7k_r1.15_eam1.punish
+
+###### error report ######
+total error sum 0.489989, count 9214 (9408 forces, 49 energies)
+sum of force-errors  = 4.839039e-01		( 98.758% - av: 5.143537e-05)
+sum of energy-errors = 6.081383e-03		( 1.241% )
+rms-errors:
+force 	7.171845e-03	(7.171845 meV/A)
+energy 	1.114046e-03	(1.114046 meV)
+
+Runtime: 0 hours, 3 minutes and 47 seconds.
+19363 force calculations, each took 0.011723 seconds
